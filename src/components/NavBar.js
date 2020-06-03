@@ -3,12 +3,13 @@
 import React from "react";
 import { useAuth0 } from "../react-auth0-spa";
 import Button from '@material-ui/core/Button';
+import './NavBar.css';
 
 const NavBar = () => {
   const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
 
   return (
-    <div>
+    <div id="navbar">
       <Button color = "primary">Solutions</Button>
       <Button color = "primary">Resources</Button>
       <Button color = "primary">Pricing</Button>
